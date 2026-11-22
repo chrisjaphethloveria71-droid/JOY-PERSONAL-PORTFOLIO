@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Navas is a front-end developer creating thoughtful digital experiences."
+      content="Meet Airen Joy Navas, an Information Technology student learning about technology, design, and the web."
     />
-    <title>Navas | Portfolio</title>
+    <meta name="theme-color" content="#f4f6ef" />
+    <title>Rival Personal Portfolio | Airen Joy Navas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/styles.css" />
@@ -19,12 +20,15 @@
   <body>
     <header class="site-header">
       <div class="container nav-wrap">
-        <a href="#top" class="brand">N</a>
+        <a class="brand" href="#top" aria-label="Rival Personal Portfolio home">
+          <span class="brand-mark" aria-hidden="true">R</span>
+          <span>Rival</span>
+        </a>
         <nav class="main-nav" aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
         </nav>
       </div>
     </header>
@@ -33,139 +37,189 @@
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Front-end developer</p>
-            <h1>Hi, I’m Navas.</h1>
+            <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> BSIT student</p>
+            <h1>Hi, I’m <span>Airen Joy Navas.</span></h1>
             <p class="lead">
-              I am a passionate Information Technology student
-                who loves learning about technology, designing,
-                and creating websites.
+              A curious learner with a love for technology, thoughtful design, and creating for the web.
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="#projects">View Projects</a>
-              <a class="button secondary" href="#contact">Let’s Talk</a>
+              <a class="button primary" href="#projects">Explore my projects <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="#about">A little about me <span aria-hidden="true">↓</span></a>
             </div>
-            <ul class="meta-list" aria-label="Highlights">
-              <li>Available for freelance work</li>
-              <li>Based in Chicago, IL</li>
-            </ul>
+            <div class="hero-note">
+              <span class="note-line" aria-hidden="true"></span>
+              <p>Learning something new, one idea at a time.</p>
+            </div>
           </div>
+          <div class="hero-visual">
+            <div class="portrait-frame">
+              <img src="assets/navas-portrait.jpg" alt="Portrait of Airen Joy Navas" fetchpriority="high" />
+              <div class="portrait-caption">
+                <span class="caption-mark" aria-hidden="true">✳</span>
+                <span>Curious by nature<br /><strong>Creating with care</strong></span>
+              </div>
+            </div>
+            <span class="visual-orbit orbit-one" aria-hidden="true"></span>
+            <span class="visual-orbit orbit-two" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="hero-bottom container" aria-hidden="true">
+          <span>Technology</span><span class="hero-bottom-dot"></span>
+          <span>Design</span><span class="hero-bottom-dot"></span>
+          <span>The web</span>
+        </div>
+      </section>
 
-          <div class="hero-visual" aria-label="Profile illustration">
-            <div class="portrait-card">
-              <img src="assets/navas-portrait.jpg" alt="Navas portrait" />
+      <section id="about" class="section about-section">
+        <div class="container about-grid">
+          <div class="section-intro">
+            <p class="section-tag"><span>01</span> A little about me</p>
+            <h2>Curiosity is where <em>good things begin.</em></h2>
+          </div>
+          <div class="about-copy">
+            <p class="about-lead">
+              I’m Airen Joy Navas, a Bachelor of Science in Information Technology student in BSIT 3C.
+            </p>
+            <p>
+              I enjoy learning new skills, exploring technology, and growing my knowledge of web development.
+              I’m a hardworking and responsible student, working toward my goal of becoming an IT professional.
+            </p>
+            <div class="interest-list" aria-label="Areas of interest">
+              <span>Technology</span>
+              <span>Design</span>
+              <span>Web development</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section">
-        <div class="container narrow">
-          <p class="section-tag">About</p>
-          <h2>Designing with purpose and building with clarity.</h2>
-          <p>
-            My name is Airen Joy Navas.
-        I am currently a Bachelor of Science
-        in Information Technology student
-        at BSIT 3C.
-          </p>
-          <p>
-             I am a hardworking and responsible
-        student who enjoys learning new skills,
-        exploring technology, and improving
-        my knowledge in web development.
-
-        My dream is to become a successful
-        IT professional in the future.
-          </p>
-        </div>
-      </section>
-
-      <section id="skills" class="section muted">
+      <section id="skills" class="section skills-section">
         <div class="container">
-          <p class="section-tag">Skills</p>
-          <h2>Tools and strengths.</h2>
+          <div class="section-heading">
+            <div>
+              <p class="section-tag"><span>02</span> Skills & interests</p>
+              <h2>Things I’m <em>growing into.</em></h2>
+            </div>
+            <p class="section-description">
+              A few of the areas I enjoy exploring as I learn more about technology and the web.
+            </p>
+          </div>
           <div class="skills-grid">
             <article class="skill-card">
-              <h3>Web Design</h3>
-              <p>UI systems, wireframes, visual hierarchy, and prototype thinking.</p>
+              <span class="card-number">01</span>
+              <span class="skill-icon icon-layout" aria-hidden="true"><i></i><i></i><i></i></span>
+              <h3>Web design</h3>
+              <p>Exploring visual ideas and shaping clear, thoughtful page layouts.</p>
             </article>
             <article class="skill-card">
+              <span class="card-number">02</span>
+              <span class="skill-icon icon-code" aria-hidden="true">&lt;/&gt;</span>
               <h3>HTML & CSS</h3>
-              <p>Semantics, responsive layouts, accessibility, and polished styles.</p>
+              <p>Learning the building blocks behind structured, styled websites.</p>
             </article>
             <article class="skill-card">
+              <span class="card-number">03</span>
+              <span class="skill-icon icon-script" aria-hidden="true">JS</span>
               <h3>JavaScript</h3>
-              <p>Interactive behavior, DOM manipulation, and front-end logic.</p>
+              <p>Discovering how code can bring useful interactions to a page.</p>
             </article>
             <article class="skill-card">
-              <h3>Collaboration</h3>
-              <p>Cross-functional teamwork, clear communication, and product thinking.</p>
+              <span class="card-number">04</span>
+              <span class="skill-icon icon-spark" aria-hidden="true">✳</span>
+              <h3>Keep learning</h3>
+              <p>Building knowledge through curiosity, practice, and new ideas.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="section">
+      <section id="projects" class="section projects-section">
         <div class="container">
-          <p class="section-tag">Projects</p>
-          <h2>Recent work.</h2>
+          <div class="section-heading projects-heading">
+            <div>
+              <p class="section-tag"><span>03</span> Selected projects</p>
+              <h2>Ideas taking <em>shape.</em></h2>
+            </div>
+            <p class="section-description">
+              A selection of project concepts focused on everyday routines, wellbeing, and the web.
+            </p>
+          </div>
           <div class="project-grid">
             <article class="project-card">
-              <div class="project-badge">UI Design</div>
-              <h3>Restwell Tracker</h3>
-              <p>
-                A web-based sleep tracking and healthy sleep tips system.
-              </p>
+              <div class="project-art art-restwell" aria-hidden="true">
+                <span class="art-label">RESTWELL</span>
+                <span class="moon-shape"></span>
+                <span class="sleep-star star-one">✳</span>
+                <span class="sleep-star star-two">✦</span>
+                <span class="sleep-caption">A softer<br />way to rest</span>
+              </div>
+              <div class="project-content">
+                <div class="project-meta"><span>01</span><span>UI Design</span></div>
+                <h3>Restwell Tracker</h3>
+                <p>A web-based sleep tracker with helpful tips for building healthier sleep habits.</p>
+                <div class="project-tags"><span>Wellbeing</span><span>Sleep</span></div>
+              </div>
             </article>
             <article class="project-card">
-              <div class="project-badge">Web App</div>
-              <h3>Daily Habit Tracker</h3>
-              <p>
-                A minimal productivity dashboard for tracking routines, goals, and personal growth.
-              </p>
+              <div class="project-art art-habit" aria-hidden="true">
+                <span class="art-label">DAILY NOTES</span>
+                <span class="habit-title">Small steps,<br /><em>every day.</em></span>
+                <span class="habit-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="habit-check">✓</span>
+              </div>
+              <div class="project-content">
+                <div class="project-meta"><span>02</span><span>Web App</span></div>
+                <h3>Daily Habit Tracker</h3>
+                <p>A minimal dashboard concept for keeping routines, goals, and personal growth in view.</p>
+                <div class="project-tags"><span>Productivity</span><span>Habits</span></div>
+              </div>
             </article>
             <article class="project-card">
-              <div class="project-badge">Landing Page</div>
-              <h3>LaunchKit</h3>
-              <p>
-                A high-converting product landing page built to communicate value and simplify signup.
-              </p>
+              <div class="project-art art-launch" aria-hidden="true">
+                <span class="art-label">LAUNCHKIT</span>
+                <span class="launch-ring ring-one"></span>
+                <span class="launch-ring ring-two"></span>
+                <span class="launch-pill">Make it happen <b>↗</b></span>
+              </div>
+              <div class="project-content">
+                <div class="project-meta"><span>03</span><span>Landing Page</span></div>
+                <h3>LaunchKit</h3>
+                <p>A product landing page concept that puts the value up front and keeps sign-up simple.</p>
+                <div class="project-tags"><span>Product</span><span>Web design</span></div>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section muted">
-        <div class="container narrow">
-          <p class="section-tag">Experience</p>
-          <h2>Building thoughtful experiences.</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <span>2023 — Present</span>
-              <div>
-                <h3>Freelance Front-end Developer</h3>
-                <p>Designing and developing websites for startups, creatives, and small businesses.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span>2020 — 2023</span>
-              <div>
-                <h3>UI Designer</h3>
-                <p>Created digital experiences with a focus on usability, content flow, and accessibility.</p>
-              </div>
-            </div>
+      <section id="contact" class="contact-section">
+        <div class="container contact-panel">
+          <div class="contact-copy">
+            <p class="section-tag"><span>04</span> Get in touch</p>
+            <h2>Let’s make room for <em>new ideas.</em></h2>
+            <p>
+              Thanks for stopping by. I’d love to connect with people who share an interest in technology,
+              design, and the web.
+            </p>
           </div>
+          <a
+            class="button contact-button"
+            href="https://github.com/chrisjaphethloveria71-droid"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Find me on GitHub <span aria-hidden="true">↗</span>
+          </a>
+          <span class="contact-decoration" aria-hidden="true">✳</span>
         </div>
       </section>
     </main>
 
-    <footer id="contact" class="site-footer">
+    <footer class="site-footer">
       <div class="container footer-wrap">
-        <div>
-          <p class="section-tag">Contact</p>
-          <h2>Let’s build something meaningful.</h2>
-        </div>
-        <a class="button primary" href="mailto:navas@email.com">navas@email.com</a>
+        <a class="footer-brand" href="#top">Rival Personal Portfolio</a>
+        <p>Made with curiosity by Airen Joy Navas</p>
+        <a class="back-to-top" href="#top">Back to top ↑</a>
       </div>
     </footer>
   </body>
